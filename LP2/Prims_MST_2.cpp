@@ -32,6 +32,7 @@ void Graph::create()
         cout << "\n Enter the weight of the edge between " << src << " & " << dst << " :->" << endl;
         cin >> weight;
         adjMatrix[src][dst] = weight;
+        adjMatrix[dst][src] = weight;
     }
 }
 
